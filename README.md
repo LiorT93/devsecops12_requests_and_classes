@@ -1,0 +1,2 @@
+# devsecops12_requests_and_classes
+Requests assigment
