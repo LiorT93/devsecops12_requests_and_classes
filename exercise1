@@ -1,0 +1,17 @@
+# Define the MyUser class
+class MyUser:
+    def __init__(self, id, name, username, email):
+        # Set the id, name, username, and email fields
+        self.id = id
+        self.name = name
+        self.username = username
+        self.email = email
+    
+    # Return the MyUser object string
+    def __str__(self):
+        return f"MyUser(id={self.id}, name={self.name}, username={self.username}, email={self.email})"
+
+
+# Create a MyUser object and print the string
+user = MyUser(123, 'Lior Taub', 'liortaub', 'liortaub@devsecops12.com')
+print(user)
