@@ -1,0 +1,16 @@
+import requests
+
+# Ask the user input a name 
+name = input("Enter your name: ")
+
+# Get the data from the URL and load the JSON
+response = requests.get("https://jsonplaceholder.typicode.com/users")
+data = response.json()
+
+# Check if the name is present in the loaded JSON
+for user in data:
+    if user['name'] == name:
+        print(f"User {name} found!")
+        break
+else:
+    print(f"User {name} not found.")
